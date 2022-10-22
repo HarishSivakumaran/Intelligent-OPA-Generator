@@ -1,0 +1,39 @@
+.uploader {
+  display: flex;
+  height: 200px;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  .select {
+    height: 230px;
+    width: 70%;
+    z-index: 3;
+    transition: all 0.1s ease-in;
+    background-color: #FFE69A;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+
+    &:hover{
+        h2{
+            opacity: 0;
+        }
+    }
+    
+    svg{
+        height: 100px;
+        color: azure;
+        margin-top: 50px;
+        transition: all 0.1s;
+        &:hover{
+            margin-top: 30px;
+            height: 150px; 
+        }
+    }   
+
+    input[type="file"] {
+        display: none;
+      }
+
+  }
+}

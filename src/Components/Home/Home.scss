@@ -1,0 +1,19 @@
+.Home{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 300px;
+
+    img{
+        width: 100%;
+        position: relative;
+        height: 150%;
+    }
+
+    h1{
+        font-size: 100px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}

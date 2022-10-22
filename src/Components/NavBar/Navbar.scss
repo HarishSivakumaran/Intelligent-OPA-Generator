@@ -1,0 +1,52 @@
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    background: fixed;
+    background-color: #FFD24C;
+    display: block;
+    .nav-logo{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: -10px;
+        svg{
+            height: 20px;
+            margin-right: 12px;
+            margin-left: 10px;
+            transition: all 0.5s ease-in;
+
+            &:hover{
+            transform: rotate(360deg);
+            color: aliceblue;
+            }
+        }
+
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+
+    .nav-tabs{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        left: 35%;
+        top: -5px;
+
+        h2{ 
+            font-family: cursive;
+            color: #1A132F;
+            margin-left: 50px;
+            font-size: 20px;
+            transition: all 0.2s ease-in;
+
+            &:hover{
+                color: aliceblue;
+            }
+
+            
+       }
+
+    }
+}   
