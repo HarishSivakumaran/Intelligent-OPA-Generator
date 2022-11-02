@@ -1,13 +1,20 @@
-import logo from './logo.svg';
-import './App.scss';
-import {Routes, Route} from 'react-router-dom';
-import Layout from './Components/Layout/Layout';
+import logo from "./logo.svg";
+import "./App.scss";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Components/Layout/Layout";
+import FileContext from "./Context/FileContext";
+import { useState } from "react";
+import OPALayout from "./Components/ConfigureOPA/OPALayout/OPALayout";
 
 function App() {
+  const [file, setFile] = useState();
   return (
-   <Routes>
-    <Route path='/' element={<Layout/>} />
-   </Routes>
+    <FileContext.Provider value={[file, setFile]}>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/addOPA" element={<OPALayout />} />
+      </Routes>
+    </FileContext.Provider>
   );
 }
 
